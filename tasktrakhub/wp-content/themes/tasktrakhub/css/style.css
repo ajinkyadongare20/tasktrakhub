@@ -696,6 +696,22 @@ a.nav-link.text-white {
 }
 
 
+/*** Industry Solution ***/
+
+.hr-line {
+margin: 1rem 0;
+color: inherit;
+background-color: rgb(0 0 0) !important;
+border: 0;
+opacity: .25;
+width: 80%;
+}
+
+button.btn.w-100.text-start.text-dark.fw-bold:hover {
+    color: red !important;
+}
+
+
 
 /*** Footer ***/
 
@@ -755,7 +771,7 @@ a.nav-link.text-white {
 }
 
 .footer .copyright a:hover {
-    color: #51ff00;
+    color: #c2c5c1 !important;
 }
 
 .footer .footer-menu a {

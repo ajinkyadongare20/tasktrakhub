@@ -103,3 +103,13 @@ function showSection(sectionId) {
 }
 
 
+// JavaScript to handle collapsible sections Industry Solution
+function toggleCollapse(targetId) {
+    const allSections = document.querySelectorAll('.collapse');
+    allSections.forEach(section => {
+        if (section.id !== targetId) {
+            section.classList.remove('show');
+        }
+    });
+}
+

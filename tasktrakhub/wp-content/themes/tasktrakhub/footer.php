@@ -75,8 +75,8 @@
     <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="index.php">Leal Software Solution Pvt Ltd © 2024</a>
-                    | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
+                    &copy; <a class="border-bottom" href="index.php">Leal Software Solution Pvt Ltd © 2025</a>
+                    | All Rights Reserved.<a class="border-bottom" href="https://lealsolution.com/demo/leal_solution/"
                         target="_blank"></a>
                 </div>
 
