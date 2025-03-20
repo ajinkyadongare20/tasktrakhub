@@ -108,7 +108,7 @@ get_header();
         <!-- Right Side Content Display -->
         <div class="col-md-7">
             <div class="collapse show text-center" id="healthcare">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/1.png"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/1.png"
                     alt="Healthcare" class="img-fluid"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
@@ -121,7 +121,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="construction">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/2.png" alt="Construction"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/2.png" alt="Construction"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Project Management Oversee construction projects with detailed task
@@ -133,7 +133,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="education">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/3.png" alt="Education"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/3.png" alt="Education"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Class Scheduling Organize class schedules, meetings, and academic events.
@@ -145,7 +145,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="retail">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/8.png" alt="Retail"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/8.png" alt="Retail"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Inventory Management Track inventory levels, stock replenishment, and vendor
@@ -157,7 +157,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="realestate">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/4.png" alt="Real Estate"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/4.png" alt="Real Estate"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Property Listings Organize property listings, client interactions, and viewing
@@ -169,7 +169,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="financialservices">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/5.png" alt="Financial Services"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/5.png" alt="Financial Services"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Client Appointments Schedule and manage client meetings, consultations, and
@@ -181,7 +181,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="technology">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/6.png" alt="Technology"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/6.png" alt="Technology"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
                     <li>Project Development Manage software development projects, track milestones,
@@ -193,7 +193,7 @@ get_header();
                 </ul>
             </div>
             <div class="collapse text-center" id="nonprofit">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/7.png"
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/industry_solution/7.png"
                     alt="Nonprofit Organizations"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
@@ -210,7 +210,7 @@ get_header();
 </div>
 
 
-
+<!-- A Code for Sign Up Now -->
 <div class="container-fluid bg-light py-5" style="display: flex; justify-content: center; align-items: center;">
     <div class="text-center">
         <p class="text-danger fs-6">Ready to Transform Your Industry?</p>
@@ -218,6 +218,7 @@ get_header();
         <button class="btn btn-primary px-4 py-2 mt-3 rounded-3 fw-bold">Sign Up Now</button>
     </div>
 </div>
+<!-- Code end for sign up now -->
 
 
 

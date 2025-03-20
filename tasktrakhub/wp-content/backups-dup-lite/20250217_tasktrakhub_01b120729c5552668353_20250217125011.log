@@ -1,0 +1,73 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: February 17, 2025 12:50 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.11.2
+WORDPRESS:	6.7.1
+PHP INFO:	8.0.30 | SAPI: apache2handler
+SERVER:		Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (512M default) 
+MEMORY STACK: 40MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20250217_tasktrakhub_01b120729c5552668353_20250217125011_database.sql
+SQL FILE SIZE: 971.17KB (994483)
+SQL FILE TIME: 2025-02-17 12:50:38
+SQL RUNTIME: 1.93 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/xampp/htdocs/wordpess_projects/tasktrakhub_project/tasktrakhub/tasktrakhub
+ARCHIVE FILE: 20250217_tasktrakhub_01b120729c5552668353_20250217125011_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	91.83MB
+STATS:	Dirs 559 | Files 3,985
+SQL ADDED: 20250217_tasktrakhub_01b120729c5552668353_20250217125011_database.sql
+ZipArchive Object
+(
+    [lastId] => 4543
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4544
+    [filename] => C:\xampp\htdocs\wordpess_projects\tasktrakhub_project\tasktrakhub\tasktrakhub\wp-content\backups-dup-lite\tmp\20250217_tasktrakhub_01b120729c5552668353_20250217125011_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 4543
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 42.4MB
+ARCHIVE RUNTIME: 16.31 sec.
+MEMORY STACK: 42MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 971.17KB
+INSTALLER FILE: 73.48KB
+ARCHIVE FILE: 44.24MB 
+EXPECTED FILE/DIRECTORY COUNT: 4,544
+ACTUAL FILE/DIRECTORY COUNT: 4,543
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 23.72 sec.
+PEAK PHP MEMORY USED: 42MB
+DONE PROCESSING => 20250217_tasktrakhub February 17, 2025 12:51 pm
+

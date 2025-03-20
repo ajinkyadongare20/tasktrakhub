@@ -31,6 +31,8 @@
 
     <!-- Font Stylesheet Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -71,7 +73,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+               
+                <?php  
+                        wp_nav_menu(array(
+                            'theme_location' => 'menu-1',
+                            'container' => false,
+                            'container_class' => '',
+                            'menu_class' => 'navbar-nav mb-2 mb-lg-0',
+                            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                            'depth' => 3,
+                            'walker' => new wp_bootstrap_navwalker()
+                        ));
+                    ?>
+
+                
+              <!--   <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">HOME</a>
                     </li>
@@ -88,17 +104,20 @@
                         <a class="nav-link text-white" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">SIGN IN / SIGN UP</a>
+                        <a class="nav-link text-white" href="https://www.tasktrakhub.com/" target="_blank">SIGN IN /
+                            SIGN UP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary btn-gradient text-uppercase px-4 py-2 text-white" href="#">
                             Get Started
                         </a>
                     </li>
-                </ul>
+                </ul>  -->
+
             </div>
         </div>
     </nav>
+
 
     <header class="container-fluid top-section px-5">
         <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -108,13 +127,20 @@
                 <a href="#" class="text-dark">Productivity Tips and Best Practices</a>
             </div>
             <div>
-                <a href="#" class="btn btn-primary">Join TaskTrak Hub</a>
-                <a href="#" class="btn btn-member-login">Member Login</a>
+                <a href="https://www.tasktrakhub.com/" class="btn btn-primary" target="_blank"
+                    rel="noopener noreferrer">
+                    Join TaskTrak Hub
+                </a>
+                <a href="https://www.tasktrakhub.com/login" class="btn btn-member-login" target="_blank"
+                    rel="noopener noreferrer">
+                    Member Login
+                </a>
             </div>
+
         </div>
     </header>
 
-    <header class="container-fluid bottom-section">
+    <!-- <header class="container-fluid bottom-section">
         <div class="container">
             <ul class="nav justify-content-center">
                 <li class="nav-item dropdown">
@@ -142,5 +168,5 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <div class="clearfix"></div>

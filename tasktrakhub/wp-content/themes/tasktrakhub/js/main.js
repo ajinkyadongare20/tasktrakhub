@@ -113,3 +113,26 @@ function toggleCollapse(targetId) {
     });
 }
 
+
+// Code for Contact Support and Feedback page for Start Rating
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll("#uniqueStarRating .unique-star");
+    const ratingInput = document.getElementById("uniqueRatingInput");
+
+    stars.forEach(star => {
+        star.addEventListener("click", function () {
+            const ratingValue = this.getAttribute("data-value");
+            ratingInput.value = ratingValue;
+
+            // Reset all stars
+            stars.forEach(s => s.classList.remove("text-success"));
+            stars.forEach(s => s.classList.add("text-primary"));
+
+            // Highlight selected stars
+            for (let i = 0; i < ratingValue; i++) {
+                stars[i].classList.add("text-success");
+            }
+        });
+    });
+});
+

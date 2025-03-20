@@ -15,6 +15,33 @@
 get_header();
 ?>
 
+<!-- Main Content -->
+<div class="container-fluid bg-gradient-main text-white d-flex align-items-center py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <!-- Left Section -->
+            <div class="col-lg-6 text-center text-lg-start px-5">
+                <h1 class="fw-bold display-4 text-white">TaskTrak Hub: All Your Tasks in One Place</h1>
+                <p class="fs-5 mt-3">Efficient task management for teams and individuals.</p>
+                <form class="d-flex justify-content-center justify-content-lg-start my-4" style="height: 50px;">
+                    <input type="email" class="form-control w-50 me-3 rounded-pill" placeholder="Enter your email">
+                    <button class="btn btn-primary px-4 rounded-pill">Sign up - it's free!</button>
+                </form>
+                <a href="#" class="text-white text-decoration-underline d-block">
+                    <i class="bi bi-play-circle"></i> Watch Demo
+                </a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-lg-6 d-flex justify-content-center">
+                <img src="<?php bloginfo('template_directory'); ?>/img/index_tasktrak/test.webp"
+                    alt="TaskTrak Illustration" class="img-fluid tasktrak-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content End -->
+
 <!-- Contact Start -->
 <div class="container-fluid bg-light py-3">
   <div class="container py-3 py-sm-4 py-md-5 px-2 px-sm-3 px-md-4 px-lg-5">

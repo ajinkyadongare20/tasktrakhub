@@ -1,7 +1,7 @@
 <?php
 /**
  * The main template file
- * Template Name: Industry Solution
+ * Template Name: Use Cases Application
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -45,26 +45,26 @@ get_header();
 
 <!-- About TaskTrak Hub -->
 <div class="container-fluid bg-light py-5 wow fadeIn" data-wow-delay="0.3s">
-    <h2 class="text-center mb-4">Industry-Specific Solutions</h2>
+    <h2 class="text-center mb-4">Use Cases and Applications</h2>
     <div class="row">
         <div class="col-12 px-5" style="line-height:30px">
-            <p>At TaskTrakHub, we recognize that every industry has unique challenges when it comes to task and calendar
-                management. Our platform offers tailored solutions designed to meet the specific demands of various
-                sectors. Discover how TaskTrakHub can enhance productivity, improve collaboration, and streamline
-                workflows in your industry</p>
+            <p>TaskTrakHub is designed to be a versatile solution for managing tasks and events across various contexts.
+                Explore how our platform can be applied to different scenarios to enhance productivity and streamline
+                workflows.</p>
 
-            <p>Efficient task management is critical in healthcare to ensure smooth operations and patient care.
-                TaskTrakHub provides automated scheduling for appointments and shifts, secure collaboration for medical
-                teams, and compliance tracking with document management to maintain regulatory.</p>
+            <p>Healthcare professionals can leverage TaskTrakHub for efficient task management, ensuring smooth
+                operations and patient care. The platform provides automated scheduling for appointments and shifts,
+                secure collaboration for medical teams, and compliance tracking with document management.</p>
 
-            <p>TaskTrakHub helps educators, students, and administrators stay organized by offering class schedule
-                management, assignment tracking, faculty collaboration, and seamless integration with learning
+            <p>Educators, students, and administrators can stay organized with TaskTrakHub by managing class schedules,
+                tracking assignments, enabling faculty collaboration, and integrating seamlessly with learning
                 management systems to enhance the educational experience.</p>
 
-            <p>Financial institutions benefit from TaskTrakHub's automated reminders for compliance deadlines, client
-                meeting scheduling, portfolio tracking, secure document sharing, and efficient task delegation, ensuring
-                regulatory adherence and operational efficiency.</p>
-            <p>Technology and IT services rely on agile workflows and efficient project management. TaskTrakHub supports
+            <p>Financial professionals can benefit from TaskTrakHub's automated reminders for compliance deadlines,
+                client meeting scheduling, portfolio tracking, secure document sharing, and efficient task delegation,
+                ensuring regulatory adherence and operational efficiency.</p>
+
+            <p>Technology and IT teams rely on agile workflows and efficient project management. TaskTrakHub supports
                 sprint planning, backlog management, bug tracking, and team collaboration on code reviews with
                 integration into development tools to streamline execution.</p>
         </div>
@@ -74,135 +74,158 @@ get_header();
 
 
 
+
 <div class="container py-5">
     <h5 class="fs-2 text-center text-dark pb-5">Our Approach to help uplift your business</h5>
     <div class="row mt-4">
         <!-- Left Side Menu -->
         <div class="col-md-5">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#healthcare"
-                onclick="toggleCollapse('healthcare')">Healthcare Management</button>
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse"
+                data-bs-target="#projectmanagement" onclick="toggleCollapse('projectmanagement')">Project
+                Management</button>
             <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#construction"
-                onclick="toggleCollapse('construction')">Construction Projects</button>
-            <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#education"
-                onclick="toggleCollapse('education')">Education System</button>
-            <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#retail"
-                onclick="toggleCollapse('retail')">Retail Operations</button>
-            <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#realestate"
-                onclick="toggleCollapse('realestate')">Real Estate Solutions</button>
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#eventplanning"
+                onclick="toggleCollapse('eventplanning')">Event Planning</button>
             <hr class="hr-line">
             <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse"
-                data-bs-target="#financialservices" onclick="toggleCollapse('financialservices')">Financial
-                Services</button>
+                data-bs-target="#personalproductivity" onclick="toggleCollapse('personalproductivity')">Personal
+                Productivity</button>
             <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#technology"
-                onclick="toggleCollapse('technology')">Technology Development</button>
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse"
+                data-bs-target="#corporateadministration" onclick="toggleCollapse('corporateadministration')">Corporate
+                Administration</button>
             <hr class="hr-line">
-            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#nonprofit"
-                onclick="toggleCollapse('nonprofit')">Nonprofit Organizations</button>
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse"
+                data-bs-target="#clientmanagement" onclick="toggleCollapse('clientmanagement')">Client and Customer
+                Management</button>
+            <hr class="hr-line">
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse"
+                data-bs-target="#educationtraining" onclick="toggleCollapse('educationtraining')">Education and
+                Training</button>
+            <hr class="hr-line">
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#salesmarketing"
+                onclick="toggleCollapse('salesmarketing')">Sales and Marketing</button>
+            <hr class="hr-line">
+            <button class="btn text-start text-dark fw-bold" data-bs-toggle="collapse" data-bs-target="#businessadmin"
+                onclick="toggleCollapse('businessadmin')">Business Administration</button>
         </div>
 
         <!-- Right Side Content Display -->
         <div class="col-md-7">
-            <div class="collapse show text-center" id="healthcare">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/1.png"
-                    alt="Healthcare" class="img-fluid"
+            <!-- Project Management -->
+            <div class="collapse show text-center" id="projectmanagement">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/1.png"
+                    alt="Project Management" class="img-fluid"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Manage appointments, follow-ups, and consultations seamlessly. Coordinate with medical staff and
-                        track patient care efficiently.</li>
-                    <li>Assign tasks to healthcare professionals and monitor progress to ensure timely and accurate
-                        care.</li>
-                    <li>Keep track of regulatory requirements and generate reports to stay compliant with healthcare
-                        standards.</li>
+                    <li>Team Coordination: Assign tasks to team members, set deadlines, and track progress in real-time.
+                        Ensure that every team member is aligned and informed.</li>
+                    <li>Milestone Tracking: Monitor project milestones and deadlines with visual timelines and
+                        reminders. Keep projects on track and meet key deliverables.</li>
+                    <li>Document Sharing: Attach project-related documents, notes, and files directly to tasks and
+                        events for easy access and collaboration.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="construction">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/2.png" alt="Construction"
+
+            <!-- Event Planning -->
+            <div class="collapse text-center" id="eventplanning">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/2.png"
+                    alt="Event Planning"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Project Management Oversee construction projects with detailed task
-                        assignments, deadlines, and progress tracking.</li>
-                    <li>Resource Allocation Manage resources, schedules, and subcontractors
-                        effectively to ensure project milestones are met.</li>
-                    <li>Documentation Attach and organize important documents, blueprints, and permits
-                        for easy access and reference.</li>
+                    <li>Event Scheduling: Plan and schedule events, meetings, and appointments. Send invitations and
+                        track RSVPs to ensure smooth execution.</li>
+                    <li>Task Delegation: Assign tasks related to event preparation, such as venue booking, catering, and
+                        guest management.</li>
+                    <li>Reminder Alerts: Set reminders and notifications for critical event deadlines and milestones to
+                        keep everything on track.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="education">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/3.png" alt="Education"
+
+            <!-- Personal Productivity -->
+            <div class="collapse text-center" id="personalproductivity">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/3.png"
+                    alt="Personal Productivity"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Class Scheduling Organize class schedules, meetings, and academic events.
-                        Coordinate with teachers, students, and staff efficiently.</li>
-                    <li>Assignment Tracking Assign and track student assignments, grades, and feedback
-                        in one place.</li>
-                    <li>Event Management Plan and manage school events, parent-teacher meetings, and
-                        extracurricular activities.</li>
+                    <li>Daily Task Management: Organize and prioritize your daily tasks with ease. Use labels and
+                        categories to keep track of different types of tasks and activities.</li>
+                    <li>Calendar Integration: Sync your tasks and events with your calendar to get a comprehensive view
+                        of your schedule and deadlines.</li>
+                    <li>Goal Setting: Set personal goals and track progress with customized task lists and reminders to
+                        stay motivated and focused.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="retail">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/8.png" alt="Retail"
+
+            <!-- Corporate Administration -->
+            <div class="collapse text-center" id="corporateadministration">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/4.png"
+                    alt="Corporate Administration"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Inventory Management Track inventory levels, stock replenishment, and vendor
-                        orders. Ensure smooth inventory operations and minimize stockouts.</li>
-                    <li>Sales and Promotions Schedule and manage sales events, promotions, and
-                        marketing campaigns. Monitor their effectiveness and impact.</li>
-                    <li>Staff Scheduling Manage employee shifts, schedules, and tasks to optimize
-                        workforce efficiency and customer service.</li>
+                    <li>Employee Task Management: Assign and monitor tasks for employees, track productivity, and ensure
+                        timely completion of corporate goals.</li>
+                    <li>Meeting Scheduling: Organize corporate meetings, conferences, and team-building activities.
+                        Coordinate schedules and manage meeting agendas.</li>
+                    <li>Reporting and Analytics: Generate reports on task completion, employee performance, and project
+                        status to make informed administrative decisions.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="realestate">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/4.png" alt="Real Estate"
+
+            <!-- Client and Customer Management -->
+            <div class="collapse text-center" id="clientmanagement">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/5.png"
+                    alt="Client and Customer Management"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Property Listings Organize property listings, client interactions, and viewing
-                        schedules. Keep track of offers, negotiations, and closings.</li>
-                    <li>Client Management Assign tasks related to client communications, property
-                        searches, and follow-ups.</li>
-                    <li>Marketing Campaigns Plan and execute marketing campaigns for property sales
-                        and rentals. Monitor campaign performance and ROI.</li>
+                    <li>Client Projects: Manage client projects, assign tasks, and track progress to ensure client
+                        satisfaction and timely delivery of services.</li>
+                    <li>Customer Follow-Ups: Schedule and track follow-up tasks for customer inquiries, support
+                        requests, and feedback.</li>
+                    <li>Client Access: Provide clients with read-only access to project progress and updates, fostering
+                        transparency and communication.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="financialservices">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/5.png" alt="Financial Services"
+
+            <!-- Education and Training -->
+            <div class="collapse text-center" id="educationtraining">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/6.png"
+                    alt="Education and Training"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Client Appointments Schedule and manage client meetings, consultations, and
-                        financial reviews.</li>
-                    <li>Task Coordination Assign and track tasks related to financial planning,
-                        audits, and regulatory compliance.</li>
-                    <li>Report Generation Generate financial reports, performance metrics, and
-                        compliance documentation efficiently.</li>
+                    <li>Course Management: Organize and manage course schedules, assignments, and academic events.
+                        Coordinate with students and faculty efficiently.</li>
+                    <li>Training Programs: Plan and track training sessions, workshops, and seminars. Monitor
+                        participation and track training progress.</li>
+                    <li>Student Assignments: Assign and review student assignments, projects, and assessments, and
+                        provide feedback and grades.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="technology">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/6.png" alt="Technology"
+
+            <!-- Sales and Marketing -->
+            <div class="collapse text-center" id="salesmarketing">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/7.png"
+                    alt="Sales and Marketing"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Project Development Manage software development projects, track milestones,
-                        and coordinate with development teams.</li>
-                    <li>Bug Tracking Assign and monitor bug reports, feature requests, and updates to
-                        ensure smooth software releases.</li>
-                    <li>Client Collaboration Provide clients with read-only access to project progress
-                        and updates, enhancing transparency and communication.</li>
+                    <li>Campaign Management: Plan, schedule, and manage marketing campaigns, promotional activities, and
+                        sales events. Track campaign performance and ROI.</li>
+                    <li>Lead Tracking: Assign and monitor tasks related to lead generation, follow-ups, and sales
+                        conversions.</li>
+                    <li>Performance Metrics: Generate reports and analyze performance metrics to optimize sales
+                        strategies and marketing efforts.</li>
                 </ul>
             </div>
-            <div class="collapse text-center" id="nonprofit">
-                <img src="<?php bloginfo('template_directory'); ?>/img/industry_solution/7.png"
-                    alt="Nonprofit Organizations"
+
+            <!-- Business Administration -->
+            <div class="collapse text-center" id="businessadmin">
+                <img src="<?php bloginfo('template_directory'); ?>/img/solution/use_cases_application/8.png"
+                    alt="Business Administration"
                     style="max-width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                 <ul class="py-3 text-start text-dark" style="line-height:30px; padding-left: 15px;">
-                    <li>Fundraising Events Organize and manage fundraising events, campaigns, and
-                        volunteer activities.</li>
-                    <li>Donor Management Track donor interactions, donations, and follow-ups to
-                        maintain strong relationships.</li>
-                    <li>Program Management Coordinate and track the progress of various programs and
-                        initiatives.</li>
+                    <li>Operational Management: Ensures smooth daily business activities and workflow optimization.</li>
+                    <li>Financial Management: Involves budgeting, financial planning, and investment strategies.</li>
+                    <li>Strategic Planning: Develops business strategies for expansion and market competitiveness.</li>
                 </ul>
             </div>
         </div>
@@ -210,7 +233,7 @@ get_header();
 </div>
 
 
-
+<!-- A Code for Sign Up Now -->
 <div class="container-fluid bg-light py-5" style="display: flex; justify-content: center; align-items: center;">
     <div class="text-center">
         <p class="text-danger fs-6">Ready to Transform Your Industry?</p>
@@ -218,6 +241,7 @@ get_header();
         <button class="btn btn-primary px-4 py-2 mt-3 rounded-3 fw-bold">Sign Up Now</button>
     </div>
 </div>
+<!-- Code end for sign up now -->
 
 
 
