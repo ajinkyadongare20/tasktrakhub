@@ -1,5 +1,5 @@
 <?php
-
+ 
 /**
  * The header for our theme
  *
@@ -39,8 +39,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
@@ -73,100 +73,44 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-               
+
+
+            <!-- <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+
+
+
                 <?php  
                         wp_nav_menu(array(
                             'theme_location' => 'menu-1',
                             'container' => false,
-                            'container_class' => '',
+                            'container_class'   => 'collapse navbar-collapse',
+	                        'container_id'      => 'bs-example-navbar-collapse-1',
                             'menu_class' => 'navbar-nav mb-2 mb-lg-0',
                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                             'depth' => 3,
                             'walker' => new wp_bootstrap_navwalker()
                         ));
                     ?>
-
-                
-              <!--   <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">SOLUTIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">CASE STUDIES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">BLOGS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="https://www.tasktrakhub.com/" target="_blank">SIGN IN /
-                            SIGN UP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary btn-gradient text-uppercase px-4 py-2 text-white" href="#">
-                            Get Started
-                        </a>
-                    </li>
-                </ul>  -->
-
             </div>
         </div>
     </nav>
 
 
-    <header class="container-fluid top-section px-5">
-        <div class="d-flex justify-content-between align-items-center flex-wrap">
-            <div>
-                <a href="#" class="text-dark">Explore Plans</a>
-                <a href="#" class="text-dark">Industry Specific Solution</a>
-                <a href="#" class="text-dark">Productivity Tips and Best Practices</a>
-            </div>
-            <div>
-                <a href="https://www.tasktrakhub.com/" class="btn btn-primary" target="_blank"
-                    rel="noopener noreferrer">
+    <header class="container-fluid top-section">
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+           <div class="d-flex justify-content-center gap-2">
+                <a href="https://www.tasktrakhub.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     Join TaskTrak Hub
                 </a>
-                <a href="https://www.tasktrakhub.com/login" class="btn btn-member-login" target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://www.tasktrakhub.com/" class="btn btn-member-login" target="_blank" rel="noopener noreferrer">
                     Member Login
                 </a>
             </div>
-
         </div>
     </header>
 
-    <!-- <header class="container-fluid bottom-section">
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">TaskTrak Hub</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">About TaskTrak Hub</a></li>
-                        <li><a class="dropdown-item" href="#">Mission</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">PRICING</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">SUPPORT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">ENQUIRY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.php">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
-    </header> -->
     <div class="clearfix"></div>

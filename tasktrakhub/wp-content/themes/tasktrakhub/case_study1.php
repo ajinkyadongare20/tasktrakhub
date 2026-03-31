@@ -254,13 +254,13 @@ get_header();
 
 
 <!-- A Code for Sign Up Now -->
-<div class="container-fluid bg-light py-5" style="display: flex; justify-content: center; align-items: center;">
+<!-- <div class="container-fluid bg-light py-5" style="display: flex; justify-content: center; align-items: center;">
     <div class="text-center">
         <p class="text-danger fs-6">Ready to Transform Your Industry?</p>
         <h5 class="text-dark fw-bold">TaskTrakHub is designed to help you streamline tasks</h5>
         <button class="btn btn-primary px-4 py-2 mt-3 rounded-3 fw-bold">Sign Up Now</button>
     </div>
-</div>
+</div> -->
 <!-- Code end for sign up now -->
 
 

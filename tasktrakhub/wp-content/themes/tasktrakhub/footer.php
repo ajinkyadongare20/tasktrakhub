@@ -117,4 +117,12 @@
 
 </body>
 
+<script>
+    $(document).ready(function(){
+        $(".dropdown-toggle").attr('data-toggle', 'dropdown');
+
+        $(".dropdown-toggle").attr('test', 'testing');
+    });
+    </script>
+
 </html>

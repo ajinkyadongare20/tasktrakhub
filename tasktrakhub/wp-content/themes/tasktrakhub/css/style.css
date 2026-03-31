@@ -119,7 +119,7 @@ h5 {
 }
 
 .menu-item a {
-    color: #fff !important;
+    color: #ffffff !important;
     padding: 0px 15px;
 }
 
@@ -187,6 +187,53 @@ a.nav-link.text-white {
     margin-right: 15px;
 }
 
+#navbarContent ul li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    width: 200%;
+    background-color: #0c2f6d;
+}
+
+/* This code for mobile menu sub dropdown */
+@media (min-width: 320px) {
+    .navbar-brand img {
+        height: 50px !important;
+    }
+
+    .navbar-brand {
+        margin-left: 1rem !important;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+
+    ul.dropdown-menu {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+    border: 1px solid white;
+    background-color: transparent;
+    }   
+
+    .menu-item.dropdown:hover ul.dropdown-menu {
+        display: block !important;
+    }    
+}
+
 @media (max-width: 991px) {
     .navbar-nav .nav-link {
         font-size: 14px;
@@ -227,8 +274,6 @@ a.nav-link.text-white {
     height: auto;
     border-radius: 8px;
 }
-
-
 
 .wp-left-section {
     background-color: #f8f9fa;
@@ -351,6 +396,7 @@ a.nav-link.text-white {
     color: #000000;
     text-align: right;
 }
+
 .testimonial-arrow {
     position: absolute;
     bottom: -15px;
@@ -608,8 +654,8 @@ a.nav-link.text-white {
 .pricing-card {
     height: 100%;
     border-radius: 10px;
-    border: 2px solid #6c63ff; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #6c63ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -618,7 +664,7 @@ a.nav-link.text-white {
     padding: 10px 25px;
     margin: 5px;
     color: #ffffff;
-    background-color: #6c63ff !important;
+    background-color: #0077c8 !important;
     text-align: center;
     position: relative;
     text-decoration: none;
@@ -734,6 +780,7 @@ a.nav-link.text-white {
 .accordion .accordion-button {
     transition: all 0.3s ease, box-shadow 0.3s ease;
 }
+
 .accordion .accordion-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
@@ -743,12 +790,12 @@ a.nav-link.text-white {
 /*** Industry Solution ***/
 
 .hr-line {
-margin: 1rem 0;
-color: inherit;
-background-color: rgb(0 0 0) !important;
-border: 0;
-opacity: .25;
-width: 80%;
+    margin: 1rem 0;
+    color: inherit;
+    background-color: rgb(0 0 0) !important;
+    border: 0;
+    opacity: .25;
+    width: 80%;
 }
 
 button.btn.w-100.text-start.text-dark.fw-bold:hover {
